@@ -9,6 +9,7 @@ jobs:
       - name: Create or Update Project Card
         uses: peter-evans/create-or-update-project-card@v2
         with:
+          project-location: "bcgov"
           token: ${{ secrets.GITHUB_TOKEN }}
           project-number: 108
           column-name: "New"
